@@ -32,7 +32,7 @@ const Work = () => {
                 <Link href="/works/buymyev" className="cursor-pointer" onMouseEnter={() => setTouch('buymyev')} onMouseLeave={() => setTouch('')}>
 
                     <div className="rounded-md">
-                        <img className="object-cover rounded-md h-40" src="/buymyev.png" alt="grandiose" />
+                        <img className="object-cover rounded-md h-40" src="/buymyevhome.png" alt="buymyev" />
                         <div className="text-center">
                             <h2 className="text-[18px] text-[#81e6d9] font-bold mt-2"><ProjectHighlight name="Buymyev.in" touch={touch == 'buymyev' ? true : false} /></h2>
                             <p className="text-[16px] leading-tight">Smart, connected urban mobility solution for your work & leisure.</p>

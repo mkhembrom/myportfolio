@@ -1,5 +1,6 @@
+import Link from "next/link";
 import { useState } from "react";
-import {BsGithub, BsTwitter, BsInstagram} from "react-icons/bs";
+import {BsGithub, BsTwitter, BsInstagram, BsLinkedin} from "react-icons/bs";
 import { RoughNotation, RoughNotationGroup, } from "react-rough-notation";
 
 
@@ -10,7 +11,7 @@ const ComputerScienceEngineering = ({show, animationDuration}: any) => {
 
 const SocialLink = ({touch, animationDuration, name}: any) => {
     
-    return <RoughNotation type="box" strokeWidth={1} color="#a7f3d0" animationDuration={animationDuration} show={touch}>{name}</RoughNotation>;
+    return <RoughNotation type="box" strokeWidth={1} color="pink" animationDuration={animationDuration} show={touch}>{name}</RoughNotation>;
 }
 
 export const Bio = () => {
@@ -41,11 +42,14 @@ export const Bio = () => {
                 <p className="text-[18px]">Music, Design, Games, Anime, Football</p>
             </div>
             <h2 className="border-b-4 border-white-300 text-[#81e6d9] text-2xl font-bold inline">On the web</h2>
-            <div className="my-4 ml-4 text-[18px]">
-                <li className="flex space-x-4 list-none items-center pb-2 cursor-pointer inline font-bold text-[#81e6d9]" onMouseEnter={() => setTouch('github')} onMouseLeave={() => setTouch('')}><BsGithub /> <span className={`${touch}`}><SocialLink name="@mkhembrom" touch={touch == 'github' ? true : false} /></span></li>
-                <li className="flex space-x-4 list-none items-center pb-2 cursor-pointer inline font-bold text-[#81e6d9]" onMouseEnter={() => setTouch('twitter')} onMouseLeave={() => setTouch('')}><BsTwitter /><span><SocialLink name="@HembromManjesh" touch={touch == 'twitter' ? true : false} /></span></li>
-                <li className="flex space-x-4 list-none items-center pb-2 cursor-pointer inline font-bold text-[#81e6d9]" onMouseEnter={() => setTouch('instagram')} onMouseLeave={() => setTouch('')}><BsInstagram /><span><SocialLink name="@mkhembrom.exe" touch={touch == 'instagram' ? true : false} /></span></li>
-                <li className="flex space-x-4 list-none items-center pb-2 cursor-pointer inline font-bold text-[#81e6d9]"></li>
+            <div className="my-4 ml-4 text-[18px] w-fit">
+                
+                <Link href="https://github.com/mkhembrom" target="_blank" className="flex space-x-4 list-none items-center pb-2 cursor-pointer  font-bold text-[#81e6d9]" onMouseEnter={() => setTouch('github')} onMouseLeave={() => setTouch('')}><span className=""><BsGithub /></span> <span className=""><SocialLink name="@mkhembrom" touch={touch == 'github' ? true : false} /></span></Link>
+                <Link href="https://twitter.com" target="_blank" className="flex space-x-4 list-none items-center pb-2 cursor-pointer  font-bold text-[#81e6d9]" onMouseEnter={() => setTouch('twitter')} onMouseLeave={() => setTouch('')}><BsTwitter /><span><SocialLink name="@HembromManjesh" touch={touch == 'twitter' ? true : false} /></span></Link>
+                <Link href="https://linkedin.com/in/manjesh-hembrom" target="_blank" className="flex space-x-4 list-none items-center pb-2 cursor-pointer  font-bold text-[#81e6d9]" onMouseEnter={() => setTouch('linkedin')} onMouseLeave={() => setTouch('')}><BsLinkedin /><span><SocialLink name="@manjesh-hembrom" touch={touch == 'linkedin' ? true : false} /></span></Link>
+
+                <Link href="https://instagram.com/mkhembrom.exe" target="_blank" className="flex space-x-4 list-none items-center pb-2 cursor-pointer  font-bold text-[#81e6d9]" onMouseEnter={() => setTouch('instagram')} onMouseLeave={() => setTouch('')}><BsInstagram /><span><SocialLink name="@mkhembrom.exe" touch={touch == 'instagram' ? true : false} /></span></Link>
+                
             </div>
         </div>
     );
