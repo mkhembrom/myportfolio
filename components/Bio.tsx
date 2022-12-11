@@ -9,6 +9,11 @@ const ComputerScienceEngineering = ({show, animationDuration}: any) => {
     return <RoughNotation type="circle" strokeWidth={1} color="pink" animationDuration={animationDuration} show={show}>Computer Science & Engineering</RoughNotation>;
 }
 
+const ZeroToMasteryAcademy = ({show, animationDuration}: any) => {
+    
+    return <RoughNotation type="circle" strokeWidth={1} color="pink" animationDuration={animationDuration} show={show}>Javacript bootcamp</RoughNotation>;
+}
+
 const SocialLink = ({touch, animationDuration, name}: any) => {
     
     return <RoughNotation type="box" strokeWidth={1} color="pink" animationDuration={animationDuration} show={touch}>{name}</RoughNotation>;
@@ -16,11 +21,12 @@ const SocialLink = ({touch, animationDuration, name}: any) => {
 
 export const Bio = () => {
     const [show, setShow] = useState(false);
+    const [showJs, setShowJs] = useState(false);
     const [touch, setTouch] = useState('');
 
 
     return (
-        <div className="w-1/2 mx-auto">
+        <div className="w-[85%] md:w-1/2 mx-auto">
             <h2 className="border-b-4 border-white-300 text-[#81e6d9] text-2xl font-bold inline">Bio</h2>
 
             <div className="my-4">
@@ -31,6 +37,10 @@ export const Bio = () => {
             <div className="flex space-x-6">
                 <h3 className="font-bold text-[18px] tracking-wide">2015</h3>
                 <p className="text-[18px]">Completed the Undergrad's Program in the <span onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(true)}><ComputerScienceEngineering  show={show} /></span> at <span className="text-[#81e6d9] font-bold">Vinoba Bhave University</span> (Guru Gobind Singh Educational Society's Technical Campus)</p>
+            </div>
+            <div className="flex space-x-6">
+                <h3 className="font-bold text-[18px] tracking-wide">2020</h3>
+                <p className="text-[18px]">Did <span onMouseEnter={() => setShowJs(true)} onMouseLeave={() => setShowJs(true)}><ZeroToMasteryAcademy  show={showJs} /></span> at <span className="text-[#81e6d9] font-bold">Zero to Mastery Academy</span> open school.</p>
             </div>
             <div className="flex space-x-6">
                 <h3 className="font-bold text-[18px] tracking-wide">2022</h3>

@@ -29,22 +29,28 @@ export const Stack = () => {
         router.push("/works");
     }
 
+    const downloadResume = () => {
+        window.open('/Manjesh_Resume.pdf');
+    }
+
+    const [active, setActive] = useState(false);
     const [listStack, setListStack] = useState(["flutter", "reactjs", "nextjs", "typescript", "expressjs", "nodejs", "postgres", "mongodb", "graphql", "c++", "dart", "javascript", "java", "docker", "lua", "nestjs"]);
 
+   
     return (
         <>
-            <div className='w-1/2 flex mx-auto mt-4 justify-between'>
+            <div className='w-[85%] md:w-1/2 flex mx-auto mt-4 justify-between'>
 
-                <div className='w-1/4'></div>
-                <motion.div initial={{opacity: 0}} animate={{ opacity: 1 }} transition={{ duration: 1.6 }} className="w-3/4 ml-6 flex space-x-6 justify-end items-center">
+                <div className='md:w-1/4'></div>
+                <div className="w-full md:w-3/4 md:ml-6 flex space-x-4 md:space-x-6 justify-end items-center">
 
-                    <motion.button initial={{ opacity: 0, y: -30 }} animate={{ opacity: [0,0.5,1], y: [-30, 0] }} transition={{ duration: 0.2, type: "tween" }} onClick={handleClick} className="w-full tracking-wide uppercase border-2 rounded-md border-[#81e6d9] ease-in duration-300 hover:text-[#81e6d9] font-bold px-4 py-2 mb-4">Portfolio</motion.button>
+                    <button onMouseEnter={() => setActive(true)} onMouseLeave={() => setActive(false)}  id={active ? 'spinner' : ''} onClick={handleClick} className={`${active ? 'bg-[#81e6d9]' : ''}  w-full tracking-wide uppercase border-2 rounded-md border-[#81e6d9] text-[#81e6d9] ease-in duration-300 font-bold text-sm md:text-md px-4 py-2 mb-4`}>Portfolio</button>
 
-                    <motion.button initial={{ opacity: 0, y: -30}} animate={{ opacity: [0,0.5,1], y: [-30,0] }} transition={{ duration: 0.2, type: "tween" }} className="w-full tracking-wide uppercase border-2 rounded-md border-[#81e6d9] hover:text-[#81e6d9] ease-in duration-300 font-bold px-4 py-2 mb-4 flex items-center">Download Resume<span className='ml-2 font-bold hover:text-white'><FiDownload /></span></motion.button>
-                </motion.div>
+                    <button onClick={downloadResume}  id="spinner"  className="md:w-full tracking-wide uppercase border-2 rounded-md border-[#81e6d9] bg-[#81e6d9] hover:text-[#81e6d9] ease-in duration-300 font-bold text-sm md:text-md px-2 md:px-4 py-2 mb-4 flex text-center items-center"><span className='hidden md:flex'>Download Resume</span><span className='md:ml-2 font-bold hover:text-white px-2 md:px-0 flex justify-center items-center'><FiDownload size={20} /></span></button>
+                </div>
             </div>
 
-            <div className="w-1/2 mx-auto">
+            <div className="w-[85%] mt-4 md:mt-0 md:w-1/2 mx-auto">
                 <h2 className="border-b-4 border-white-300 text-[#81e6d9] text-2xl font-bold inline">Stack</h2>
                 <motion.div
                     variants={container}

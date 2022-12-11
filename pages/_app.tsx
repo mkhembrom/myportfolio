@@ -48,7 +48,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
       <Layout router={router}>
         <Component {...pageProps} key={router.route} />
       </Layout>
-      <footer className='w-1/2 text-center mx-auto py-6'>
+      <footer className='w-full md:w-3/4 lg:w-1/2 text-center mx-auto py-6'>
         <p className='text-slate-400 text-[15px]'>© {new Date().getFullYear()} Manjesh Hembrom. All Rights Reserved.</p>
       </footer>
     </div>

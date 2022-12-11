@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { useState } from "react";
 import { RoughNotation, RoughNotationGroup, } from "react-rough-notation";
+import {motion} from 'framer-motion'
 
 const ProjectHighlight = ({ touch, animationDuration, name }: any) => {
 
@@ -11,18 +12,30 @@ const ProjectHighlight = ({ touch, animationDuration, name }: any) => {
 const Work = () => {
     const [touch, setTouch] = useState('');
 
+    const items: any = {
+        active: {
+            blur: 2,
+
+        },
+        inactive: {
+          blur: 0,
+          transition: { duration: 2 }
+        }
+      };
     
 
     return (
-        <div className="w-2/5 mx-auto">
+        <div className="w-[80%] md:w-2/5 mx-auto">
 
             <div className="mt-20 mb-10">
                 <h2 className="border-b-4 border-white-300 text-[#81e6d9] text-2xl font-bold inline ">Work</h2>
             </div>
-            <div className="grid grid-rows-auto grid-cols-2 gap-8">
+            <div className="grid grid-rows-auto grid-cols-1 md:grid-cols-2 gap-8">
                 <Link href="/works/grandiose" className="cursor-pointer" onMouseEnter={() => setTouch('grandiose')} onMouseLeave={() => setTouch('')}>
-                    <div className="rounded-md">
-                        <img className="object-cover rounded-md h-40" src="/grandiose.png" alt="grandiose" />
+                    <div className="w-full rounded-md">
+                        <motion.div variants={items} animate="active" className="w-full h-full">
+                        <img className="object-cover rounded-md w-full md:h-40" src="/grandiose.png" alt="grandiose" />
+                        </motion.div>
                         <div className="text-center">
                             <h2 className="text-[18px] text-[#81e6d9] font-bold mt-2"><ProjectHighlight name="Grandiose Art" touch={touch == 'grandiose' ? true : false} /></h2>
                             <p className="text-[16px] leading-tight">Gallery art websites for potenstial client</p>
@@ -64,7 +77,7 @@ const Work = () => {
             <div className="my-10">
 
                 <h2 className="border-b-4 border-white-300 text-[#81e6d9] text-2xl font-bold inline">Old Work</h2>
-                <div className="grid grid-rows-auto grid-cols-2 gap-8 my-10">
+                <div className="grid grid-rows-auto grid-cols-1 md:grid-cols-2 gap-8 my-10">
                     <div className="rounded-md">
                         <video className="rounded-md h-40 object-cover" autoPlay={true}>
                             <source src="/cloud.mp4" type="video/mp4" />
