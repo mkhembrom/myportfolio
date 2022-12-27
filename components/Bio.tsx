@@ -62,7 +62,7 @@ const FullStackEngineer = ({ show, animationDuration }: any) => {
 
 const Experiance = ({ show, animationDuration }: any) => {
 
-    return <RoughNotation type="highlight" animationDelay={2000} strokeWidth={1} color="yellow" animationDuration={animationDuration} show={show}>1.5+ years</RoughNotation>;
+    return <RoughNotation type="highlight" animationDelay={2000} strokeWidth={1} color="yellow" animationDuration={animationDuration} show={show}>1.5+</RoughNotation>;
 }
 
 const SocialLink = ({ touch, animationDuration, name }: any) => {
@@ -89,7 +89,7 @@ export const Bio = () => {
             <h2 className="border-b-4 border-white-300 text-[#81e6d9] dark:text-pink-300 text-2xl font-bold inline">Summary</h2>
             <div className="py-4">
 
-                <p className=" text-[18px] text-justify">Hello and welcome to my portfolio website! My name is <span className="text-[#81e6d9] dark:text-pink-300 font-bold">Manjesh Hembrom</span> and I am a <span className={`${inView ? "delay-[1000ms] duration-1000 text-black" : ""}`}><FullStackEngineer show={inView} animationDuration={2000} /></span> with <span className={`${inView ? "delay-[2500ms] duration-1500 text-black" : ""}`}><Experiance show={inView} animationDuration={3000} /></span> of experience in the field. I have a passion for Software devlopment and I am constantly striving to improve my skills and knowledge in order to provide the best possible solutions for my clients.
+                <p className=" text-[18px] text-justify">Hello and welcome to my portfolio website! My name is <span className="text-[#81e6d9] dark:text-pink-300 font-bold">Manjesh Hembrom</span> and I am a <span className={`${inView ? "delay-[1000ms] duration-1000 text-black" : ""}`}><FullStackEngineer show={inView} animationDuration={2000} /></span> with <span className={`${inView ? "delay-[2500ms] duration-1500 text-black" : ""}`}><Experiance show={inView} animationDuration={3000} /></span> years of experience in the field. I have a passion for Software devlopment and I am constantly striving to improve my skills and knowledge in order to provide the best possible solutions for my clients.
                     <br /><br />
                     I have a strong background in <TextHighlight show={inView} animationDuration={3000} text="java" /> as well as in <TextHighlight animationDelay={1000} text="javascript" show={inView} animationDuration={3500} /> and I have worked on a wide range of projects that have allowed me to develop my skills and experience.
                 </p>
@@ -103,15 +103,15 @@ export const Bio = () => {
                 </div>
                 <div className="flex space-x-6">
                     <h3 className="font-bold text-[18px] tracking-wide">2015</h3>
-                    <p className="text-[16px]">Completed the Undergrad&apos;s Program in the <span onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(true)}><TextHighlightCircle show={show} text="Computer Science & Engineering" /></span> at <span className="text-[#81e6d9] dark:text-pink-300 font-bold">Vinoba Bhave University</span> (Guru Gobind Singh Educational Society&apos;s Technical Campus).</p>
+                    <p className="text-[16px]">Completed the Undergrad&apos;s Program in the <TextHighlightUnderline show={inView} animationDuration={1000} animationDelay={1500} text="Computer Science & Engineering" /> at <span className="text-[#81e6d9] dark:text-pink-300 font-bold">Vinoba Bhave University</span> (Guru Gobind Singh Educational Society&apos;s Technical Campus).</p>
                 </div>
                 <div className="flex space-x-6">
                     <h3 className="font-bold text-[18px] tracking-wide">2018</h3>
-                    <p className="text-[16px]"> <span onMouseEnter={() => setShowJava(true)} onMouseLeave={() => setShowJava(true)}>Core + advance <span className="text-[#81e6d9] dark:text-pink-300 font-bold"></span><TextHighlightUnderline show={showJava} text="java foundation" /></span> from <span className="text-[#81e6d9] dark:text-pink-300 font-bold">Naresh I Technology</span>, Hyderabad.</p>
+                    <p className="text-[16px]">Core + advance <TextHighlightUnderline show={inView} animationDuration={1000} animationDelay={2000} text="java foundation" /> from <span className="text-[#81e6d9] dark:text-pink-300 font-bold">Naresh I Technology</span>, Hyderabad.</p>
                 </div>
                 <div className="flex space-x-6">
                     <h3 className="font-bold text-[18px] tracking-wide">2020</h3>
-                    <p className="text-[16px]"> <span onMouseEnter={() => setShowJs(true)} onMouseLeave={() => setShowJs(true)}><TextHighlightCircle show={showJs} text="Javascript bootcamp" /></span> at <span className="text-[#81e6d9] dark:text-pink-300 font-bold">Zero to Mastery Academy</span>.</p>
+                    <p className="text-[16px]"><TextHighlightCircle show={inView} animationDelay={2500} animationDuration={2800} text="Javascript bootcamp" /> at <span className="text-[#81e6d9] dark:text-pink-300 font-bold">Zero to Mastery Academy</span>.</p>
                 </div>
                
                 <div className="flex space-x-6">
