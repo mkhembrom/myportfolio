@@ -2,14 +2,8 @@ import { NextApiRequest, NextApiResponse } from "next";
 import nodemailer from "nodemailer"
 
 export default function (req: NextApiRequest, res: NextApiResponse) {
-  console.log("API WORk");
 
     const {name, email, message} = req.body;
-
-    console.log(name);
-    console.log(message);
-    console.log(email);
-
 
     interface LooseObject {
       [key: string]: any

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { TfiGithub } from "react-icons/tfi"
 import { motion } from "framer-motion"
+import Image from "next/image";
 
 export const Header = () => {
 
@@ -13,7 +14,7 @@ export const Header = () => {
                 <Link href="/">
                     <div className="py-4 flex items-end">
                         <div className="rounded-md bg-[#fff] mr-2 overflow-hidden">
-                            <img className={`origin-bottom ${tilt ? '-rotate-12 translate-y-2 duration-500' : 'rotate-0 duration-300'}`} src='cat.svg' alt='cat' width="30" height="30" />
+                            <Image className={`origin-bottom ${tilt ? '-rotate-12 translate-y-2 duration-500' : 'rotate-0 duration-300'}`} src='/cat.svg' alt='cat' width="30" height="30" />
                         </div>
                         <p className="text-2xl cursor-pointer hidden sm:flex md:flex" onMouseEnter={() => setTilt(true)} onMouseLeave={() => setTilt(false)}>Manjesh <span className="font-bold">Hembrom</span></p>
                     </div>

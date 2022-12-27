@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { BiChevronRight, BiLinkAlt } from 'react-icons/bi'
 
@@ -19,26 +20,26 @@ const Buymyev = () => {
             </div>
             <div className='w-[85%] md:w-1/2 mx-auto my-4 px-6 md:px-12'>
                 <p className='text-[16px] leading-6 tracking-wider	'>Windbnb is clone project for airbnb. The feature includes selecting rooms and people acomodation per room listing. This website is inactive.</p>
-                <div className='flex mt-5 items-center space-x-4'>
-                    <div className='flex bg-[#34403a] text-[14px] text-[#94ddad] font-bold uppercase'>Website</div>
-                    <Link href="https://mkhembrom.github.io/windbnb/" target="_blank" className='text-[#d055a1] flex font-bold'>https://mkhembrom.github.io/windbnb/<BiLinkAlt color="#fff" /></Link>
+                <div className='flex mt-5 items-start md:items-center space-x-4'>
+                    <p className='flex bg-[#34403a] text-[14px] text-[#94ddad] font-bold uppercase'>Website</p>
+                    <Link href="https://mkhembrom.github.io/windbnb/" target="_blank" className='text-[#d055a1] flex break-all font-bold'>https://mkhembrom.github.io/windbnb/<span><BiLinkAlt color="#fff" /></span></Link>
                 </div>
-                <div className='flex items-center space-x-4'>
-                    <div className='flex bg-[#34403a] text-[14px] text-[#94ddad] font-bold uppercase'>Stack</div>
-                    <p className='text-[#d055a1] flex font-bold'>React, styled-component, framer-motion, javascript</p>
+                <div className='flex items-start md:items-center space-x-4'>
+                    <p className='flex bg-[#34403a] text-[14px] text-[#94ddad] font-bold uppercase'>Stack</p>
+                    <p className='text-[#d055a1] break-all flex font-bold'>React, styled-component, framer-motion, javascript</p>
                 </div>
-                <div className='flex items-center space-x-4'>
-                    <div className='flex bg-[#34403a] text-[14px] text-[#94ddad] font-bold uppercase'>Inspiration</div>
-                    <Link href="https://devchallenges.io/solutions/fIYVt64acW9xynLdKLXA" target="_blank" className='text-[#d055a1] flex font-bold'>https://devchallenges.io<BiLinkAlt color="#fff" /></Link>
+                <div className='flex items-start md:items-center space-x-4'>
+                    <p className='flex bg-[#34403a] text-[14px] text-[#94ddad] font-bold uppercase'>Inspiration</p>
+                    <Link href="https://devchallenges.io/solutions/fIYVt64acW9xynLdKLXA" target="_blank" className='text-[#d055a1] flex break-all  font-bold'>https://devchallenges.io<span><BiLinkAlt color="#fff" /></span></Link>
 
                 </div>
-                <img className="rounded-md my-4" src="/windbnb.png" alt="" />
+                <Image width={400} height={400} layout="responsive" className="rounded-md my-4" src="/windbnb.png" alt="" />
                 <div className='grid grid-rows-2 grid-cols-2 gap-4'>
-                <img className="rounded-md row-span-1 col-span-1 h-full object-cover" src="/windbnbdrop.jpeg" alt="" />
-                <img className="rounded-md row-span-2 col-span-1 w-full h-[400px] object-cover" src="/windbnbres.jpeg" alt="" />
-                <img className="rounded-md row-span-1 col-span-1 h-full object-cover" src="/windbnbdrop2.jpeg" alt="" />
+                <Image width={400} height={400} layout="fixed" className="rounded-md row-span-1 col-span-1 h-full object-cover" src="/windbnbdrop.jpeg" alt="" />
+                <Image width={400} height={400} layout="fixed" className="rounded-md row-span-2 col-span-1 w-full h-[400px] object-cover" src="/windbnbres.jpeg" alt="" />
+                <Image width={400} height={400} layout="fixed" className="rounded-md row-span-1 col-span-1 h-full object-cover" src="/windbnbdrop2.jpeg" alt="" />
                 </div>
-                <img className="rounded-md my-4" src="/windbnbhome.jpeg" alt="" />
+                <Image width={400} height={400} layout="responsive" className="rounded-md my-4" src="/windbnbhome.jpeg" alt="" />
                
             </div>
         </div>

@@ -30,12 +30,12 @@ export const Hero = () => {
         </div>
         <div className="mx-auto w-[85%] md:w-1/2 flex flex-col sm:flex-col md:flex-row items-center md:items-start sm:justify-center">
             <div className="w-full md:w-1/4 justify-center items-center md:items-start">
-                <img className="mx-auto mb-4 rounded-full outline outline-[#81e6d9] outline-offset-4	duration-300  dark:outline-[#f50057] object-cover w-[160px] h-[160px]" src="/avatar.jpeg" alt="manjesh" />
+                <Image className="mx-auto mb-4 rounded-full outline outline-[#81e6d9] outline-offset-4	duration-300  dark:outline-[#f50057] object-cover w-[160px] h-[160px]" height="160" width="160" src="/avatar.jpeg" alt="manjesh" />
             </div>
             <div className="w-full md:w-3/4 md:ml-6">
                 {/* <p className="text-2xl text-[#81e6d9] dark:text-pink-300 md:text-3xl font-bold ">Hey There,</p> */}
                 <h1 className="text-3xl md:text-4xl text-center md:text-left font-bold py-2">Manjesh Hembrom.</h1>
-                <p className="text-[16px] text-justify md:text-[18px]">I'm a <span onMouseEnter={() => setShow(true)}><FullStackDeveloper theme={theme} show={show} animationDuration={1500} /></span>  with a passion for everything front to back-end. Welcome to my corner of internet. I'm glad you're here!</p>
+                <p className="text-[16px] text-justify md:text-[18px]">I&apos;m a <span onMouseEnter={() => setShow(true)}><FullStackDeveloper theme={theme} show={show} animationDuration={1500} /></span>  with a passion for everything front to back-end. Welcome to my corner of internet. I&apos;m glad you&apos;re here!</p>
             </div>
         </div>
     </>

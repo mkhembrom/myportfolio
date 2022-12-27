@@ -8,6 +8,7 @@ import 'prismjs/themes/prism.css';
 
 import { motion } from 'framer-motion'
 import { useEffect, useState } from "react";
+import Image from "next/image";
 const ProjectHighlight = ({ touch, animationDuration, name }: any) => {
 
     return <RoughNotation type="box" strokeWidth={1} color="pink" animationDuration={animationDuration} show={touch}>{name}</RoughNotation>;
@@ -31,7 +32,7 @@ const Anicli = () => {
     return (
         <div className="w-[85%] md:w-1/2 mx-auto mt-20 flex md:px-10 items-center">
             <div className="flex flex-col mt-10">
-                <img className="w-full" src="/anicli.png" alt="anicli" />
+                <Image className="w-full" width={400} height={400} layout="responsive" src="/anicli.png" alt="anicli" />
                 <p className="mt-10 text-[18px] text-justify">There are several command line applications that allow you to search for and watch anime streaming online. One example is AniSearch, which is a command line interface for searching and displaying information about anime and manga. It can be used to search for specific anime by title, genre, or other criteria, and it can also provide information about individual episodes and series.
                     <br /><br />
                     To use AniSearch, you will need to install it on your computer and then run it from the command line. Once it is running, you can use various commands to search for anime, view information about specific series or episodes, and even watch anime streaming online.
@@ -59,7 +60,7 @@ const Anicli = () => {
                        </pre>
                     </li>
                     <li>
-                        <p className="text-[18px] my-4 text-justify">Use the `search` command to search for anime by title, genre, or other criteria. For example, to search for anime with the keyword "action," you would type:</p>
+                        <p className="text-[18px] my-4 text-justify">Use the `search` command to search for anime by title, genre, or other criteria. For example, to search for anime with the keyword &quot;action,&quot; you would type:</p>
                         <pre className="rounded-md">
                             <code className="language-javascript">
                                 {`search action`}
