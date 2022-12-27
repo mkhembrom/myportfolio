@@ -43,7 +43,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
   return (
     <>
     {/* <Loading key={router.asPath}/> */}
-    <ThemeProvider attribute="class">
+    {/* <ThemeProvider attribute="class"> */}
     <div className='relative'>
       <Header />
       <PageIndicator />
@@ -55,7 +55,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
         <p className='text-slate-400 text-[15px]'>© {new Date().getFullYear()} Manjesh Hembrom. All Rights Reserved.</p>
       </footer>
     </div>
-    </ThemeProvider>
+    {/* </ThemeProvider> */}
     </>
   );
 }
