@@ -33,13 +33,13 @@ const Buymyev = () => {
                     <Link href="https://devchallenges.io/solutions/fIYVt64acW9xynLdKLXA" target="_blank" className='text-[#d055a1] flex break-all  font-bold'>https://devchallenges.io<span><BiLinkAlt color="#fff" /></span></Link>
 
                 </div>
-                <Image width={400} height={400} layout="responsive" className="rounded-md my-4" src="/windbnb.png" alt="" />
+                <Image loading="lazy" width={400} height={400} layout="responsive" className="rounded-md my-4" src="/windbnb.png" alt="" />
                 <div className='grid grid-rows-2 grid-cols-2 gap-4'>
-                <Image width={400} height={400} layout="fixed" className="rounded-md row-span-1 col-span-1 h-full object-cover" src="/windbnbdrop.jpeg" alt="" />
-                <Image width={400} height={400} layout="fixed" className="rounded-md row-span-2 col-span-1 w-full h-[400px] object-cover" src="/windbnbres.jpeg" alt="" />
-                <Image width={400} height={400} layout="fixed" className="rounded-md row-span-1 col-span-1 h-full object-cover" src="/windbnbdrop2.jpeg" alt="" />
+                <Image loading="lazy" width={400} height={400} layout="fixed" className="rounded-md row-span-1 col-span-1 h-full object-cover" src="/windbnbdrop.jpeg" alt="" />
+                <Image loading="lazy" width={400} height={400} layout="fixed" className="rounded-md row-span-2 col-span-1 w-full h-[400px] object-cover" src="/windbnbres.jpeg" alt="" />
+                <Image loading="lazy" width={400} height={400} layout="fixed" className="rounded-md row-span-1 col-span-1 h-full object-cover" src="/windbnbdrop2.jpeg" alt="" />
                 </div>
-                <Image width={400} height={400} layout="responsive" className="rounded-md my-4" src="/windbnbhome.jpeg" alt="" />
+                <Image loading="lazy" width={400} height={400} layout="responsive" className="rounded-md my-4" src="/windbnbhome.jpeg" alt="" />
                
             </div>
         </div>

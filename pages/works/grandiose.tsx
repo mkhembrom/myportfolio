@@ -32,12 +32,12 @@ const Grandiose = () => {
                     <div className='flex bg-[#34403a] text-[14px] text-[#94ddad] font-bold uppercase'>Company</div>
                     <Link href="https://luxeveda.com/" target="_blank" className='text-[#d055a1] hover:underline break-all flex font-bold'>https://luxeveda.com<span><BiLinkAlt color="#fff" /></span></Link>
                 </div>
-                <Image width={400} height={400} layout="responsive" placeholder="empty" className="rounded-md my-4" src="/grandiose.png" alt="g1" />
-                <Image width={400} height={400} layout="responsive" placeholder="empty" className="rounded-md my-4" src="/grandiosepdp.png" alt="g2" />
+                <Image loading="lazy" width={400} height={400} layout="responsive" placeholder="empty" className="rounded-md my-4" src="/grandiose.png" alt="g1" />
+                <Image loading="lazy" width={400} height={400} layout="responsive" placeholder="empty" className="rounded-md my-4" src="/grandiosepdp.png" alt="g2" />
                 <div className='grid grid-rows-2 grid-cols-2 gap-4'>
-                <Image width={400} height={600} layout="fixed" placeholder="empty" className="rounded-md row-span-1 col-span-1 h-full object-cover" src="/grandiosehome.png" alt="g3" />
-                <Image width={400} height={400} layout="fixed" placeholder="empty" className="rounded-md row-span-2 col-span-1 object-cover" src="/grandioseframe.png" alt="g4" />
-                <Image width={400} height={800} layout="fixed" placeholder="empty" className="rounded-md row-span-1 col-span-1 h-full object-cover" src="/grandiosepdp.png" alt="g5" />
+                <Image loading="lazy" width={400} height={600} layout="fixed" placeholder="empty" className="rounded-md row-span-1 col-span-1 h-full object-cover" src="/grandiosehome.png" alt="g3" />
+                <Image loading="lazy" width={400} height={400} layout="fixed" placeholder="empty" className="rounded-md row-span-2 col-span-1 object-cover" src="/grandioseframe.png" alt="g4" />
+                <Image loading="lazy" width={400} height={800} layout="fixed" placeholder="empty" className="rounded-md row-span-1 col-span-1 h-full object-cover" src="/grandiosepdp.png" alt="g5" />
                 </div>
             </div>
         </div>

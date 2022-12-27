@@ -33,13 +33,13 @@ const Buymyev = () => {
                     <Link href="https://devchallenges.io/solutions/fIYVt64acW9xynLdKLXA" target="_blank" className='text-[#d055a1] break-all flex font-bold'>https://devchallenges.io<span><BiLinkAlt color="#fff" /></span></Link>
 
                 </div>
-                <Image width={400} height={400} layout="fixed" className="rounded-md my-4 w-full" src="/catweb.png" alt="" />
+                <Image loading="lazy" width={400} height={400} layout="fixed" className="rounded-md my-4 w-full" src="/catweb.png" alt="" />
 
                 <div className='grid grid-rows-auto grid-cols-2 gap-4'>
-                <Image width={400} height={400} layout="fixed" className="rounded-md h-full w-full" src="/catdesc.png" alt="" />
-                <Image width={400} height={400} layout="fixed" className="rounded-md h-full w-full object-cover" src="/catselect.png" alt="" />
-                <Image width={400} height={400} layout="fixed" className="rounded-md w-full h-full" src="/catother.png" alt="" />
-                <Image width={400} height={400} layout="fixed" className="rounded-md h-full w-full" src="/catsss.png" alt="" />
+                <Image loading="lazy" width={400} height={400} layout="fixed" className="rounded-md h-full w-full" src="/catdesc.png" alt="" />
+                <Image loading="lazy" width={400} height={400} layout="fixed" className="rounded-md h-full w-full object-cover" src="/catselect.png" alt="" />
+                <Image loading="lazy" width={400} height={400} layout="fixed" className="rounded-md w-full h-full" src="/catother.png" alt="" />
+                <Image loading="lazy" width={400} height={400} layout="fixed" className="rounded-md h-full w-full" src="/catsss.png" alt="" />
                 </div>
                
             </div>

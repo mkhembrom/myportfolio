@@ -6,6 +6,7 @@ import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
 import { Layout } from '../components/layout/Layout'
 import { Stack } from '../components/Stack'
+import { Summery } from '../components/Summery'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <main >
           <Hero />
           <Stack />
+          <Summery /> 
           <Bio />
         </main>
     </div>

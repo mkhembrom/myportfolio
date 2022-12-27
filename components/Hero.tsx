@@ -29,8 +29,8 @@ export const Hero = () => {
 
         </div>
         <div className="mx-auto w-[85%] md:w-1/2 flex flex-col sm:flex-col md:flex-row items-center md:items-start sm:justify-center">
-            <div className="w-full md:w-1/4 justify-center items-center md:items-start">
-                <Image className="mx-auto mb-4 rounded-full outline outline-[#81e6d9] outline-offset-4	duration-300  dark:outline-[#f50057] object-cover w-[160px] h-[160px]" height="160" width="160" src="/avatar.jpeg" alt="manjesh" />
+            <div className="w-full md:w-1/4 justify-center items-center md:items-start ">
+                <Image className="mx-auto mb-4 rounded-full outline outline-[#81e6d9] shadow-lg transition-all outline-offset-4 hover:-translate-y-1 hover:outline-cyan-400 hover:drop-shadow-xl hover:scale-110  ease-in-out duration-300  dark:outline-[#f50057] object-cover w-[160px] h-[160px]" height="160" width="160"  src="/avatar.jpeg" alt="manjesh" />
             </div>
             <div className="w-full md:w-3/4 md:ml-6">
                 {/* <p className="text-2xl text-[#81e6d9] dark:text-pink-300 md:text-3xl font-bold ">Hey There,</p> */}

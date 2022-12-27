@@ -34,12 +34,12 @@ const Buymyev = () => {
                     <div className='flex bg-[#34403a] text-[14px] text-[#94ddad] font-bold uppercase'>Company</div>
                     <Link href="https://luxeveda.com" target="_blank" className='text-[#d055a1] hover:underline flex font-bold'>https://luxeveda.com<BiLinkAlt color="#fff" /></Link>
                 </div>
-                <Image width={400} height={400} layout="responsive" className="rounded-md my-4" src="/buymyevhome.png" alt="" />
+                <Image loading="lazy" width={400} height={400} layout="responsive" className="rounded-md my-4" src="/buymyevhome.png" alt="" />
                 <div className='grid grid-rows-auto grid-cols-2 gap-4'>
-                <Image width={400} height={400} layout="fixed" className="rounded-md h-full object-cover" src="/buymyevpress.png" alt="" />
-                <Image width={400} height={400} layout="fixed" className="rounded-md h-full object-cover" src="/buymyevkick.png" alt="" />
+                <Image loading="lazy" width={400} height={400} layout="fixed" className="rounded-md h-full object-cover" src="/buymyevpress.png" alt="" />
+                <Image loading="lazy" width={400} height={400} layout="fixed" className="rounded-md h-full object-cover" src="/buymyevkick.png" alt="" />
                 </div>
-                <Image width={400} height={400} layout="responsive" className="rounded-md my-4" src="/buymyevurban.png" alt="" />
+                <Image loading="lazy" width={400} height={400} layout="responsive" className="rounded-md my-4" src="/buymyevurban.png" alt="" />
                
             </div>
         </div>
