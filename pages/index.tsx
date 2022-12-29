@@ -6,11 +6,10 @@ import { Summery } from '../components/Summery'
 
 export default function Home() {
 
-  const description = "I'm full-stack developer and I like making things on React/Nextjs and Flutter";
+  const description = "I'm a full-stack developer and I like making things on React/Nextjs and Flutter";
   const pageTitle = "Manjesh Portfolio";
   const twitterHandle = "https://twitter/HembromManjesh";
   const currentURL = "https://mkhembrom.com";
-  const previewImage = "previwImage.png";
   const siteName = "mkhembrom.com";
 
   return (
