@@ -10,7 +10,7 @@ export default function Home() {
   const pageTitle = "Manjesh Portfolio";
   const twitterHandle = "https://twitter/HembromManjesh";
   const currentURL = "https://mkhembrom.com";
-  const previewImage = "/previwImage.png";
+  const previewImage = "previwImage.png";
   const siteName = "mkhembrom.com";
 
   return (
@@ -21,13 +21,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
         <meta name="description" content={description} />
+        <meta name="author" content="Manjesh Hembrom" />
+
         {/* Twitter */}
         <meta name="twitter:card" content={description} key="twcard" />
         <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
 
         {/* Open Graph */}
         <meta property="og:url" content={currentURL} key="ogurl" />
-        <meta property="og:image" content={`${currentURL}${previewImage}`} key="ogimage" />
+        <meta name="image" property="og:image" content={`${currentURL}/previeImage.png`} key="ogimage" />
         <meta property="og:site_name" content={siteName} key="ogsitename" />
         <meta property="og:title" content={pageTitle} key="ogtitle" />
         <meta property="og:description" content={description} key="ogdesc" />
