@@ -23,7 +23,7 @@ const Posts = () => {
             </div>
             <div className="grid grid-rows-auto grid-cols-1 md:grid-cols-2 gap-8">
                 <Link href="/posts/anicli" className="cursor-pointer" onMouseEnter={() => setTouch('anicli')} onMouseLeave={() => setTouch('')}>
-                    <motion.div initial={{ filter: "blur(3px)" }} animate={{ filter: "blur(0px)" }} transition={{ duration: 0.8, type: "tween", ease: "easeIn" }} className="w-full rounded-md">
+                    <motion.div initial={{ filter: "blur(3px)" }} animate={{ filter: "blur(0px)" }} transition={{ duration: 0.5, type: "tween", ease: "easeOut" }} className="w-full rounded-md">
                        
                         <Image width={400} height={400} layout="fixed" loading="lazy"  className="object-cover rounded-md w-full md:h-40 shadow-md" src="/anicli.png" alt="anicli" />
                         <div className="text-center">
@@ -34,7 +34,7 @@ const Posts = () => {
                 </Link>
 
                 <Link href="/posts/termux" className="cursor-pointer" onMouseEnter={() => setTouch('termux')} onMouseLeave={() => setTouch('')}>
-                    <motion.div initial={{ filter: "blur(3px)" }} animate={{ filter: "blur(0px)" }} transition={{ duration: 0.8, type: "tewwn", ease: "easeIn" }} className="w-full rounded-md">
+                    <motion.div initial={{ filter: "blur(3px)" }} animate={{ filter: "blur(0px)" }} transition={{ duration: 0.5, type: "tewwn", ease: "easeOut" }} className="w-full rounded-md">
                         <Image width={400} height={400} layout="fixed" loading="lazy" className="object-cover rounded-md w-full md:h-40 shadow-md" src="/reactapp.png" alt="anicli" />
                         <div className="text-center">
                             <h2 className="text-[18px] text-[#81e6d9] font-bold mt-2"><ProjectHighlight name="React app in android" touch={touch == 'termux' ? true : false} /></h2>
