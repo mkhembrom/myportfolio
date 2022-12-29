@@ -1,18 +1,14 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Router } from 'next/router'
 import { Bio } from '../components/Bio'
-import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
-import { Layout } from '../components/layout/Layout'
 import { Stack } from '../components/Stack'
 import { Summery } from '../components/Summery'
 
 export default function Home() {
 
-  const description = "I'm full-stack developer ans I like making things on React/Nextjs ans Flutter";
+  const description = "I'm full-stack developer and I like making things on React/Nextjs and Flutter";
   const pageTitle = "Manjesh Portfolio";
-  const twitterHandle = "@HembromManjesh";
+  const twitterHandle = "https://twitter/HembromManjesh";
   const currentURL = "https://mkhembrom.com";
   const previewImage = "/previwImage.png";
   const siteName = "mkhembrom.com";
@@ -25,15 +21,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
         <meta name="description" content={description} />
-        <meta property="og:title" content={pageTitle} key="ogtitle" />
-        <meta property="og:description" content={description} key="ogdesc" />
         {/* Twitter */}
-        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:card" content={description} key="twcard" />
         <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
 
         {/* Open Graph */}
         <meta property="og:url" content={currentURL} key="ogurl" />
-        <meta property="og:image" content={previewImage} key="ogimage" />
+        <meta property="og:image" content={`${currentURL}${previewImage}`} key="ogimage" />
         <meta property="og:site_name" content={siteName} key="ogsitename" />
         <meta property="og:title" content={pageTitle} key="ogtitle" />
         <meta property="og:description" content={description} key="ogdesc" />
