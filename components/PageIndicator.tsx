@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 export const PageIndicator = () => {
 
     const router = useRouter();
+    console.log(router);
 
     const [active, setActive] = useState('works');
     function activePage() {
@@ -26,7 +27,7 @@ export const PageIndicator = () => {
             <Link href="/posts">
                 <div className={`w-3 h-3 ${active == "posts" ? "bg-[#81e6d9] dark:bg-pink-300" : ""} rounded-full mb-2 border-2 border-[#81e6d9] dark:border-pink-300 cursor-pointer`}></div>
             </Link>
-            <Link href="contact">
+            <Link href="/contact">
                 <div className={`w-3 h-3 ${active == "contact" ? "bg-[#81e6d9] dark:bg-pink-300" : ""} rounded-full mb-2 border-2 border-[#81e6d9] dark:border-pink-300 cursor-pointer`}></div>
             </Link>
         </div>
