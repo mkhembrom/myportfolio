@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { BiChevronRight, BiLinkAlt } from 'react-icons/bi'
@@ -5,6 +6,10 @@ import { BiChevronRight, BiLinkAlt } from 'react-icons/bi'
 const Buymyev = () => {
     return (
         <div>
+            <Head>
+                <title>Manjesh Hembrom | Work | Catwiki</title>
+                <link rel="icon" href="/cat.ico" />
+            </Head>
             <div className="w-[85%] md:w-1/2 lg:w-1/3 mx-auto mt-20 flex px-2 md:px-10 items-center">
                 {/* <div className="w-1/3 p-2 ">
                     <img className="bg-white rounded-[30px]" src="/cat.svg" alt="" />

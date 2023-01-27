@@ -1,7 +1,12 @@
+import Head from "next/head";
+
 const Termux = () => {
     return (
         <div className="w-[85%] xl:w-2/4 2xl:w-1/3 mx-auto mt-20 flex md:px-10 items-center">
-
+            <Head>
+                <title>Manjesh Hembrom | Post | Termux</title>
+                <link rel="icon" href="/cat.ico" />
+            </Head>
             <div className=" flex flex-col">
                 <p className="my-4 text-[18px]">Yes, it is possible to run a React app in Termux on an Android device. Here are the steps you can follow:</p>
                 <div className="mb-4">

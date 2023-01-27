@@ -5,6 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import { PropagateLoader } from "react-spinners";
 import 'react-toastify/dist/ReactToastify.css';
 import Image from 'next/image';
+import Head from 'next/head';
 
 const Contact = () => {
 
@@ -73,6 +74,10 @@ const Contact = () => {
 
     return (
         <>
+            <Head>
+                <title>Manjesh Hembrom | Contact</title>
+                <link rel="icon" href="/cat.ico" />
+            </Head>
             <div className="w-full h-screen mt-10 flex flex-col items-center justify-center">
                 {/* <h1 className="text-4xl md:text-6xl  font-[200] text-center">Reach out to me!</h1> */}
                 <div className=' w-[85%] xl:w-2/4 2xl:w-1/3 flex space-x-2 md:space-x-6 mt-[100px] items-center justify-center'>

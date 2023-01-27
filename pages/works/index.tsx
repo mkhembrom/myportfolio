@@ -3,6 +3,7 @@ import { useState } from "react";
 import { RoughNotation, RoughNotationGroup, } from "react-rough-notation";
 import { motion } from 'framer-motion'
 import Image from "next/image";
+import Head from "next/head";
 
 const ProjectHighlight = ({ touch, animationDuration, name }: any) => {
 
@@ -27,7 +28,10 @@ const Work = () => {
 
     return (
         <div className="w-[80%] xl:w-2/4 2xl:w-1/3 mx-auto">
-
+            <Head>
+                <title>Manjesh Hembrom | Work</title>
+                <link rel="icon" href="/cat.ico" />
+            </Head>
             <div className="mt-20 mb-10">
                 <h2 className="border-b-4 border-white-300 text-[#81e6d9] text-2xl font-bold inline ">Work</h2>
             </div>
