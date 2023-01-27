@@ -30,7 +30,7 @@ const Anicli = () => {
 
 
     return (
-        <div className="w-[85%] md:w-1/2 mx-auto mt-20 flex md:px-10 items-center">
+        <div className="w-[85%] xl:w-2/4 2xl:w-1/3 mx-auto mt-20 flex md:px-10 items-center">
             <div className="flex flex-col mt-10">
                 <Image className="w-full" width={400} height={400} layout="responsive" loading="lazy" src="/anicli.png" alt="anicli" />
                 <p className="mt-10 text-[18px] text-justify">There are several command line applications that allow you to search for and watch anime streaming online. One example is AniSearch, which is a command line interface for searching and displaying information about anime and manga. It can be used to search for specific anime by title, genre, or other criteria, and it can also provide information about individual episodes and series.
@@ -46,18 +46,18 @@ const Anicli = () => {
                         <pre className="rounded-md">
                             <code className="language-javascript">
 
-{`pip install anisearch`}
+                                {`pip install anisearch`}
                             </code>
                         </pre>
                     </li>
 
                     <li>
-                       <p className="text-[18px] my-4 text-justify">Run AniSearch by typing the following command:</p>
-                       <pre className="rounded-md">
-                        <code className="language-python">
-                            {`anisearch`}
-                        </code>
-                       </pre>
+                        <p className="text-[18px] my-4 text-justify">Run AniSearch by typing the following command:</p>
+                        <pre className="rounded-md">
+                            <code className="language-python">
+                                {`anisearch`}
+                            </code>
+                        </pre>
                     </li>
                     <li>
                         <p className="text-[18px] my-4 text-justify">Use the `search` command to search for anime by title, genre, or other criteria. For example, to search for anime with the keyword &quot;action,&quot; you would type:</p>

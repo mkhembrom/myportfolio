@@ -62,8 +62,8 @@ export const Bio = () => {
 
 
     return (
-        <div ref={ref} className="w-[85%] md:w-1/2 mx-auto">
-           
+        <div ref={ref} className="w-[85%] xl:w-2/4 2xl:w-1/3 mx-auto">
+
             <h2 className="border-b-4 border-white-300 text-[#81e6d9] dark:text-pink-300 text-2xl font-bold inline">Bio</h2>
 
             <div className="my-4">
@@ -83,7 +83,7 @@ export const Bio = () => {
                     <h3 className="font-bold text-[18px] tracking-wide">2020</h3>
                     <p className="text-[16px]"><TextHighlightCircle show={inView} animationDelay={2500} animationDuration={2800} text="Javascript bootcamp" /> at <span className="text-[#81e6d9] dark:text-pink-300 font-bold">Zero to Mastery Academy</span>.</p>
                 </div>
-               
+
                 <div className="flex space-x-6">
                     <h3 className="font-bold text-[18px] tracking-wide">2022</h3>
                     <p className="text-[16px]">Worked at <span className="font-bold text-[#81e6d9] dark:text-pink-300">Luxeveda Brand & Tech Pvt. Ltd.</span></p>

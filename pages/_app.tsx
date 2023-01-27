@@ -36,26 +36,26 @@ import { PuffLoader } from 'react-spinners'
 //     </div>
 //     )}
 //   </>
-  
+
 // }
 
 export default function App({ Component, pageProps, router }: AppProps) {
   return (
     <>
-    {/* <Loading key={router.asPath}/> */}
-    {/* <ThemeProvider attribute="class"> */}
-    <div className='relative'>
-      <Header />
-      <PageIndicator />
+      {/* <Loading key={router.asPath}/> */}
+      {/* <ThemeProvider attribute="class"> */}
+      <div className='relative'>
+        <Header />
+        <PageIndicator />
 
-      <Layout router={router}>
-        <Component {...pageProps} key={router.route} />
-      </Layout>
-      <footer className=' w-full md:w-3/4 lg:w-1/2 text-center mx-auto py-6'>
-        <p className='text-slate-400 text-[15px]'>© {new Date().getFullYear()} Manjesh Hembrom. All Rights Reserved.</p>
-      </footer>
-    </div>
-    {/* </ThemeProvider> */}
+        <Layout router={router}>
+          <Component {...pageProps} key={router.route} />
+        </Layout>
+        <footer className=' w-full xl:w-2/4 2xl:w-1/3 text-center mx-auto py-6'>
+          <p className='text-slate-400 text-[15px]'>© {new Date().getFullYear()} Manjesh Hembrom. All Rights Reserved.</p>
+        </footer>
+      </div>
+      {/* </ThemeProvider> */}
     </>
   );
 }
